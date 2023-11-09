@@ -64,8 +64,7 @@ If you want to see how to configure these, look up their github repositories or 
 + Linux :: Install it from your Distros Repository
 + Mac :: Install it using homeBrew or download it from the website
 + Windows :: Download it from the website or use a package manager
-** 2. Clone the repository
-To the configuration location
+** 2. Clone the config repository to the configuration location
 *** Linux and Mac
 #+begin_src bash
   git clone https://github.com/MiniApollo/kickstart.emacs.git "${XDG_CONFIG_HOME:-$HOME/.config}"/emacs
@@ -84,8 +83,8 @@ Emacs will install all the requested packages (it can take a minute).
 
 * Post Installation
 1. Hit Space f c to open the config file at ($HOME/.config/emacs)
-   Note: if your are on windows you need to change the path (hit ctrl x ctrl f, Find the config file and in general f region replace the path)
-2. Now you can Edit and add more configuration
+   Note: if you are on Windows you need to change the path (hit ctrl x ctrl f, find the config file and in general f region replace the path)
+2. Now you can Edit and add more configuration.
 
 * Uninstallation
 1. Delete the emacs folder/directory for your OS (E.g. $HOME/.config/emacs)
