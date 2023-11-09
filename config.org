@@ -72,7 +72,7 @@ To update/upgrade packages, use the package-upgrade-all command .
 
 ** Load Evil Mode
 Evil is an extensible vi/vim layer for Emacs.  Because…let’s face it.  The Vim keybindings are just plain better.
-Note: To paste without copy(yank) selected text use P (shift P evil-paste-before), because default is evil-paste-after 
+Note: To paste without copy (yank) selected text use P (shift P evil-paste-before), because default is evil-paste-after 
 You can toggle evil mode with C-z (emacs-mode)
 #+begin_src emacs-lisp
     (use-package evil
@@ -89,7 +89,7 @@ You can toggle evil mode with C-z (emacs-mode)
       ;; Setting where to use evil-collection
       (setq evil-collection-mode-list '(dired ibuffer magit))
       (evil-collection-init))
-    ;; Unmap keys in 'evil-maps if not done, (setq org-return-follows-link t) will not work
+    ;; Unmap keys in 'evil-maps. If not done, (setq org-return-follows-link t) will not work
     (with-eval-after-load 'evil-maps
       (define-key evil-motion-state-map (kbd "SPC") nil)
       (define-key evil-motion-state-map (kbd "RET") nil)
@@ -99,7 +99,7 @@ You can toggle evil mode with C-z (emacs-mode)
 ** General Keybindings
 General is a keybinding framework to set keybindings easily.
 The Leader key is what you will press when you want to access your keybindings (Space + . Find file).
-To search and replace start use query-replace-regexp one by one(SPACE to replace n to skip meta/alt ctrl %) [[https://stackoverflow.com/questions/270930/using-emacs-to-recursively-find-and-replace-in-text-files-not-already-open][Source]]
+To search and replace start use query-replace-regexp one by one (SPACE to replace n to skip meta/alt ctrl %) [[https://stackoverflow.com/questions/270930/using-emacs-to-recursively-find-and-replace-in-text-files-not-already-open][Source]]
 #+begin_src emacs-lisp
   (use-package general
     :config
