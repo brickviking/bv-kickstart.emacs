@@ -297,7 +297,9 @@ Currently its tedious to use Treesitter because emacs hasn't translated to it ye
 #+end_src
 
 *** ORG MODE
-Org mode is one of the things that emacs is loved for you will understand if you start using it or read about what it can do (like this document is the source code)
+Org mode is one of the things that emacs is loved for. you will understand if you start using it or read about what it can do (like this document is the source code)
+Once you've used it for a bit, you'll understand why people love it. Even reading about it can be inspiring! For example, this document is effectively the source code and descriptions bound into the one document, much like the literate programming ideas that Donald Knuth made famous.
+
 **** Enabling Table of Contents
 #+begin_src emacs-lisp
     (use-package toc-org
@@ -324,11 +326,13 @@ Org-tempo allows for '<s' followed by TAB to expand to a begin_src tag.
 * Terminal
 ** Vterm
 Vterm is a terminal emulator within Emacs.
+
 The 'shell-file-name' setting sets the shell to be used in M-x shell, M-x term, M-x ansi-term and M-x vterm.
-By default, the shell is set to 'fish' but could change it to 'bash' or 'zsh'.
+By default, the shell is set to 'fish' but you could change it to 'bash' or 'zsh'.
+
 #+begin_src emacs-lisp
     (use-package vterm
-      :commands (vterm))
+yfi      :commands (vterm))
     (setq shell-file-name "/bin/bash"
           vterm-max-scrollback 10000)
 #+end_src
@@ -336,9 +340,8 @@ By default, the shell is set to 'fish' but could change it to 'bash' or 'zsh'.
 * Other Packages
 All the package setups that don't need much tweaking
 ** ALL THE ICONS
-For icons and more helpful ui
-This is an icon set that can be used with dired, ibuffer and other Emacs programs.
-Don't forget to use all-the-icons-install-fonts
+For icons and more helpful ui. This is an icon set that can be used with dired, ibuffer and other Emacs programs.
+Don't forget to use all-the-icons-install-fonts.
 #+begin_src emacs-lisp
     (use-package all-the-icons
       :ensure t
@@ -346,9 +349,8 @@ Don't forget to use all-the-icons-install-fonts
 #+end_src
 
 ** Nerd Icons
-Includes more icons
-Don't forget to use nerd-icons-install-fonts
-For doom modeline
+Includes more icons; don't forget to use nerd-icons-install-fonts.
+For doom modeline:
 #+begin_src emacs-lisp
     (use-package nerd-icons
       :ensure t
@@ -359,7 +361,7 @@ For doom modeline
 #+end_src
 
 ** Magit
-Complete text-based user interface to Git
+Complete text-based user interface to Git.
 #+begin_src emacs-lisp
     (use-package magit
       :commands magit-status)
@@ -369,6 +371,7 @@ Complete text-based user interface to Git
 Company is a text completion framework for Emacs. The name stands for “complete anything”.
 Completion will start automatically after you type a few letters.
 Use M-n and M-p to select, <tab> to complete.
+
 #+begin_src emacs-lisp
     (use-package company
       :defer 2
@@ -390,9 +393,10 @@ Use M-n and M-p to select, <tab> to complete.
 #+end_src
 
 ** Ivy (counsel)
-Ivy, a generic completion mechanism for Emacs.
-Counsel, a collection of Ivy-enhanced versions of common Emacs commands.
-Ivy-rich allows us to add descriptions alongside the commands in M-x.
++ Ivy, a generic completion mechanism for Emacs.
++ Counsel, a collection of Ivy-enhanced versions of common Emacs commands.
++ Ivy-rich allows us to add descriptions alongside the commands in M-x.
+
 #+begin_src emacs-lisp
     (use-package counsel
       :after ivy
@@ -439,7 +443,7 @@ With this package installed, you can add ‘:diminish’ to any use-package bloc
 #+end_src
 
 ** WHICH-KEY
-Which-key is a helping utility for keycords (which key to press)
+Which-key is a helper utility for keychords (which key to press)
 #+begin_src emacs-lisp
     (use-package which-key
       :init
@@ -461,7 +465,7 @@ Which-key is a helping utility for keycords (which key to press)
 #+end_src
 
 * Runtime Performance
-Dial the GC threshold back down so that garbage collection happens more frequently but in less time and increase Read Process Output Max so emacs can read more data
+Dial the GC threshold back down so that garbage collection happens more frequently but in less time. We also increase Read Process Output Max so emacs can read more data.
 #+begin_src emacs-lisp
     ;; Make gc pauses faster by decreasing the threshold.
     (setq gc-cons-threshold (* 2 1000 1000))
