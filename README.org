@@ -51,22 +51,19 @@ Their content helped me to create this configuration.
 - Diminish: Hiding or abbreviation of modeline displays
 - Which key: Helper utility for keychords
 *** Recommended Packages
-If you want to see how to configure these, look up their github or check out my [[https://github.com/MiniApollo/config/blob/main/emacs/config.org][config]].
-- DashBoard: Extensible startup screen
-- UndoTree: Visualizes the undo history
-- Drag Stuff: Makes it possible to move selected text, regions and lines
-- Rainbow Delimiters: Add colors to brackets
-- Rainbow Mode: Display the actual color as a background for any hex color value (ex. #ffffff)
-- Treesitter (not really a package)
+If you want to see how to configure these, look up their github repositories or check out my [[https://github.com/MiniApollo/config/blob/main/emacs/config.org][config]].
+- DashBoard :: Extensible startup screen
+- UndoTree :: Visualizes the undo history
+- Drag Stuff :: Makes it possible to move selected text, regions and lines
+- Rainbow Delimiters :: Add colors to brackets
+- Rainbow Mode :: Display the actual color as a background for any hex color value (ex. #ffffff)
+- Treesitter :: not really a package, but a separate dependency
 
 * Installation
-** 1 Install Gnu Emacs 
-*** Linux 
-Install it from your Distros Repository
-*** Mac
-Install it using homeBrew or download it from the website
-*** Windows
-Download it from the website or use a package manager
+** 1. Install Gnu Emacs 
++ Linux :: Install it from your Distros Repository
++ Mac :: Install it using homeBrew or download it from the website
++ Windows :: Download it from the website or use a package manager
 ** 2. Clone the repository
 To the configuration location
 *** Linux and Mac
